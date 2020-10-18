@@ -1,10 +1,12 @@
-package nl.svdoetelaar.madlevel5example
+package nl.svdoetelaar.madlevel5example.ui
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_reminder.view.*
+import nl.svdoetelaar.madlevel5example.R
+import nl.svdoetelaar.madlevel5example.model.Reminder
 
 class ReminderAdapter(private val reminders: List<Reminder>) :
     RecyclerView.Adapter<ReminderAdapter.ViewHolder>() {

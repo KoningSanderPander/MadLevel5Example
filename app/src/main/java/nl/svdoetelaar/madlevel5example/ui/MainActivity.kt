@@ -1,4 +1,4 @@
-package nl.svdoetelaar.madlevel5example
+package nl.svdoetelaar.madlevel5example.ui
 
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -9,6 +9,7 @@ import android.view.MenuItem
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.activity_main.*
+import nl.svdoetelaar.madlevel5example.R
 
 class MainActivity : AppCompatActivity() {
 

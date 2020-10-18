@@ -1,4 +1,4 @@
-package nl.svdoetelaar.madlevel5example
+package nl.svdoetelaar.madlevel5example.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

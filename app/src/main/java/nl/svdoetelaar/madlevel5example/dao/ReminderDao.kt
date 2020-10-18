@@ -1,7 +1,8 @@
-package nl.svdoetelaar.madlevel5example
+package nl.svdoetelaar.madlevel5example.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import nl.svdoetelaar.madlevel5example.model.Reminder
 
 @Dao
 interface ReminderDao {

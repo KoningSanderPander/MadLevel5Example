@@ -1,7 +1,10 @@
-package nl.svdoetelaar.madlevel5example
+package nl.svdoetelaar.madlevel5example.repository
 
 import android.content.Context
 import androidx.lifecycle.LiveData
+import nl.svdoetelaar.madlevel5example.dao.ReminderDao
+import nl.svdoetelaar.madlevel5example.database.ReminderRoomDatabase
+import nl.svdoetelaar.madlevel5example.model.Reminder
 
 class ReminderRepository(context: Context) {
     private var reminderDao: ReminderDao

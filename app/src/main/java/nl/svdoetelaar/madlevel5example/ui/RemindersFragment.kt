@@ -1,11 +1,11 @@
-package nl.svdoetelaar.madlevel5example
+package nl.svdoetelaar.madlevel5example.ui
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResultListener
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
@@ -16,6 +16,9 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import nl.svdoetelaar.madlevel5example.R
+import nl.svdoetelaar.madlevel5example.model.Reminder
+import nl.svdoetelaar.madlevel5example.repository.ReminderRepository
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.

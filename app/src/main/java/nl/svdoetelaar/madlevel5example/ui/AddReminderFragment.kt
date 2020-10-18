@@ -1,15 +1,16 @@
-package nl.svdoetelaar.madlevel5example
+package nl.svdoetelaar.madlevel5example.ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.os.bundleOf
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResult
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.add_reminder_fragment.*
+import nl.svdoetelaar.madlevel5example.R
 
 const val REQ_REMINDER_KEY = "req_reminder"
 const val BUNDLE_REMINDER_KEY = "bundle_reminder"

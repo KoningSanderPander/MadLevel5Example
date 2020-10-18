@@ -1,9 +1,11 @@
-package nl.svdoetelaar.madlevel5example
+package nl.svdoetelaar.madlevel5example.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import nl.svdoetelaar.madlevel5example.dao.ReminderDao
+import nl.svdoetelaar.madlevel5example.model.Reminder
 
 @Database(entities = [Reminder::class], version = 1, exportSchema = false)
 abstract class ReminderRoomDatabase : RoomDatabase() {
