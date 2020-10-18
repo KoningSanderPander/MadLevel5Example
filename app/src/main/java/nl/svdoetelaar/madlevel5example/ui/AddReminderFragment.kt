@@ -5,20 +5,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.setFragmentResult
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.add_reminder_fragment.*
 import nl.svdoetelaar.madlevel5example.R
-
-const val REQ_REMINDER_KEY = "req_reminder"
-const val BUNDLE_REMINDER_KEY = "bundle_reminder"
+import nl.svdoetelaar.madlevel5example.model.Reminder
+import nl.svdoetelaar.madlevel5example.viewmodel.ReminderViewModel
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class AddReminderFragment : Fragment() {
+
+    private val viewModel: ReminderViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,7 +40,9 @@ class AddReminderFragment : Fragment() {
         val reminderText = etReminderName.text.toString()
 
         if (reminderText.isNotBlank()) {
-            setFragmentResult(REQ_REMINDER_KEY, bundleOf(Pair(BUNDLE_REMINDER_KEY, reminderText)))
+            viewModel.insertReminder(
+                Reminder(reminderText = reminderText)
+            )
 
             findNavController().popBackStack()
         } else {
